@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   font-family:monospace;
+
+}
+
+body{
+background-color:darkslategrey;
+height:100vh;
+width:100vw;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.stopwatch{
+    background:linear-gradient(to bottom,yellow,yellow, white,white,yellow,yellow);
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    border:5px solid green;
+
+}
+
+.frame{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    line-height:230px;
+    font-size:35px;
+    gap:6px;
+    color:darkblue;
+    font-size:30px;
+   user-select: none; /*for Selection disable  */
+   cursor:pointer;
+}
+
+.buttons{
+    width:250px;
+    background-color:yellow;
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+    height:70px;
+    padding:15px;
+    border-radius:20px;
+    border:5px solid green;
+    user-select:none;
+    cursor:pointer;
+
+}
+
+.buttons button {
+  
+    width:70px;
+    height:30px;
+    gap:5px;
+    margin:4px;
+    border-radius:6px;
+    padding:6px;
+    font-style:italic;
+    cursor:pointer;
+}
+
+.start{
+background-color:green;
+border:none;
+color:white;
+font-weight:bold;
+
+}
+
+.stop{
+    background-color:orangered;
+    color:white;
+    font-weight:bold;
+    border:none;
+    
+}
+
+.reset{
+
+    background-color:orchid;
+    color:white;
+    font-weight:bold;
+    border:none;
+
+    
+    }
+
+    /* for Disable the button */
+.start-active,
+.stop-active{
+    pointer-events:none;
+    opacity:0.5;
+}
+
+
+
+/*         *******************MEDIA QUERY************************      */
+
+@media(min-width:321px){                /*  Mobile S    */
+    .stopwatch{
+        height:280px;
+    width:280px;
+    }
+
+    .frame{
+        display:flex;
+    justify-content:center;
+    align-items:center;
+    line-height:280px;
+    font-size:35px;
+    
+        
+        
+    }
+
+    .buttons{
+        width:280px;
+        height:80px;
+        margin-top:40px;
+
+    }
+
+    .buttons button{
+        width:80px;
+    height:35px;
+    gap:5px;
+    }
+}
+
+    @media(min-width:375px){            /*   Mobile M    */
+        .stopwatch{
+            height:290px;
+        width:290px;
+        }
+    
+        .buttons{
+            width:290px;
+            height:90px;
+            margin-top:50px;
+    
+        }
+    
+        .buttons button{
+            width:90px;
+        height:45px;
+        gap:6px;
+        }
+
+    }
+
+@media(min-width:425px){                /* Mobile L    */
+    .stopwatch{
+        height:300px;
+    width:300px;
+    }
+
+    .frame{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        line-height:290px;
+        font-size:35px;
+    }
+
+
+    .buttons{
+        width:300px;
+        height:100px;
+        margin-top:60px;
+
+    }
+
+    .buttons button{
+        width:100px;
+    height:45px;
+    gap:1px;
+    margin-top:12px;
+    }
+
+}
+
+@media(min-width:768px){                /* Tablet       */
+    .stopwatch{
+        height:320px;
+    width:320px;
+    }
+
+    .frame{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        line-height:300px;
+        font-size:35px;
+    }
+
+    .buttons{
+        width:320px;
+        height:90px;
+        margin-top:1cm;
+    }
+
+    .buttons button{
+     width:150px;
+    height:40px;
+    gap:5px;
+    margin-top:10px;
+    }
+
+
+}
+
+
